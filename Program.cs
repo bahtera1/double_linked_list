@@ -25,7 +25,7 @@ namespace double_linked_list
         Node START;
         //constructor
 
-        public void addNote()
+        public void addNode()
         {
             int nim;
             string nm;
@@ -176,7 +176,7 @@ namespace double_linked_list
         static void Main(string[] args)
         {
             DoubleLinkedList obj = new DoubleLinkedList();
-            while(true)
+            while (true)
             {
                 try
                 {
@@ -252,9 +252,13 @@ namespace double_linked_list
                             }
                             break;
 
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Check fot the values entered");
                 }
             }
-
         }
     }
 }

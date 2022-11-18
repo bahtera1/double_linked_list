@@ -75,11 +75,15 @@ namespace double_linked_list
             //if the node is to be inserted at the end of the list
             if(current==null)
             {
-
+                newNode.next = null;
+                previous.next = newNode;
+                return;
             }
-
-            //
+            current.prev = newNode;
+            current.next = newNode;
         }
+
+
 
 
     }

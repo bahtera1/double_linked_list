@@ -142,18 +142,32 @@ namespace double_linked_list
             }
         }
 
+        public void descending()
+        {
+            if(listEmpty())
+                Console.WriteLine("\n List is Empty");
+            else
+            {
+                Console.WriteLine("\n Record in the Descending order of" + " Roll Number are: \n" );
+                Node currentNode;
+                //membawa currentnode ke node paling belakang
+                currentNode= START;
+                while(currentNode.next != null)
+                {
+                    currentNode= currentNode.next;
+                }
+
+                //membaca data dari last node ke first node
+                while(currentNode!= null)
+                {
+                    Console.Write(currentNode.noMhs + " " + currentNode.name + "\n");
+                    currentNode = currentNode.prev;
+                }
+            }
+        }
+
 
     }
-
-
-
-
-
-
-
-
-
-
 
 
 

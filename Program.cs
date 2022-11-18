@@ -83,7 +83,17 @@ namespace double_linked_list
             current.next = newNode;
         }
 
-
+        public bool Search(int rollNo, ref Node Previous, ref Node Current)
+        {
+            Previous = Current = START;
+            while(Current!=null &&
+                rollNo != Current.noMhs)
+            {
+                Previous= Current;
+                Current= Current.next;
+            }
+            return(Current!=null);
+        }
 
 
     }

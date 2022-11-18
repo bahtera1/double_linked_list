@@ -95,6 +95,12 @@ namespace double_linked_list
             return(Current!=null);
         }
 
+        public bool dellNode(int rollNo)
+        {
+            Node previous, current;
+            previous =current = null;
+        }
+
 
     }
 

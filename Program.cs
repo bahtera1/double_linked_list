@@ -29,7 +29,16 @@ namespace double_linked_list
         {
             int nim;
             string nm;
-            Console.WriteLine("\nEnter the roll number of students:");
+            Console.WriteLine("\nEnter the roll number of students: ");
+            nim= Convert.ToInt32(Console.ReadLine());
+            Console.Write("\n Enter the name of students: ");
+            nm= Console.ReadLine();
+            Node newNode = new Node();
+            newNode.noMhs= nim;
+            newNode.name = nm;
+
+
+            //check
         }
     }
 

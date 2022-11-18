@@ -116,6 +116,15 @@ namespace double_linked_list
                 return true;
             }
             
+            //if the to be deleted is in between the list then the following lines of is executed
+            previous.next = current.next;
+            current.next.prev = previous;
+            return true;
+        }
+
+        public bool ascending()
+        {
+
         }
 
 

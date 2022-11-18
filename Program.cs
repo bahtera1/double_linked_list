@@ -24,6 +24,13 @@ namespace double_linked_list
     {
         Node STAR;
         //constructor
+
+        public void addNote()
+        {
+            int nim;
+            string nm;
+            Console.WriteLine("\nEnter the roll number of students:");
+        }
     }
 
 

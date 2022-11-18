@@ -22,7 +22,7 @@ namespace double_linked_list
 
     class DoubleLinkedList
     {
-        Node STAR;
+        Node START;
         //constructor
 
         public void addNote()
@@ -38,7 +38,15 @@ namespace double_linked_list
             newNode.name = nm;
 
 
-            //check
+            //check if the list empty
+            if(START==null || nim <=START.noMhs )
+            {
+                if((START!=null) && (nim!=START.noMhs)) 
+                {
+                    Console.WriteLine("\n Duplicate number not allowed");
+                    return;
+                }
+            }
         }
     }
 

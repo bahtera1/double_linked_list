@@ -187,6 +187,16 @@ namespace double_linked_list
                     Console.WriteLine("4. View all record in  the descending order of roll number");
                     Console.WriteLine("5. Search for a record in the list");
                     Console.WriteLine("6. Exit\n");
+                    Console.WriteLine("Enter your choice (1-6): ");
+                    char ch = Convert.ToChar(Console.ReadLine());
+                    switch (ch)
+                    {
+                        case '1':
+                            {
+                                obj.addNode();
+                            }
+                            break;
+                    }
                 }
             }
 

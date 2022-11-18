@@ -234,9 +234,14 @@ namespace double_linked_list
                                 prev = curr = null;
                                 Console.WriteLine("\nEnter the roll number of the student whose record you want to search: ");
                                 int num = Convert.ToInt32(Console.ReadLine());
-                                if (obj.search(num, ref prev, ref curr) == false)
+                                if (obj.Search(num, ref prev, ref curr) == false)
                                     Console.WriteLine("\nRecord not found");
-
+                                else
+                                {
+                                    Console.WriteLine("\nRecord found");
+                                    Console.WriteLine("\nRoll number: " + curr.noMhs);
+                                    Console.WriteLine("\nName: " + curr.name);
+                                }
                             }
                 }
             }

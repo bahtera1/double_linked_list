@@ -20,6 +20,12 @@ namespace double_linked_list
         public Node prev;
     }
 
+    class DoubleLinkedList
+    {
+        Node STAR;
+        //constructor
+    }
+
 
 
 

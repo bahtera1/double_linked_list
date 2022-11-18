@@ -99,6 +99,23 @@ namespace double_linked_list
         {
             Node previous, current;
             previous =current = null;
+            if (Search(rollNo, ref previous, ref current) == false)
+                return false;
+            //beginning of data
+            if(current.next==null)
+            {
+                previous.next = null;
+                return true;
+            }
+            //node between two nodes in he list
+            if(current==START)
+            {
+                START = START.next;
+                if(START != null)
+                    START.prev= null;
+                return true;
+            }
+            
         }
 
 
